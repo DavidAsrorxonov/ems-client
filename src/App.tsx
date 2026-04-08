@@ -1,10 +1,17 @@
+import { toast } from "sonner";
 import { Button } from "./components/ui/button";
 
 const App = () => {
   return (
-    <div>
-      <Button>App</Button>
-    </div>
+    <>
+      <Button
+        onClick={() => {
+          toast.success("Clicked");
+        }}
+      >
+        Click
+      </Button>
+    </>
   );
 };
 
